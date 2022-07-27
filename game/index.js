@@ -1,6 +1,8 @@
+import { SNAKE_SPEED } from './snake/index.js'
+
 //const gameboard = document.getElementById('game-board')
 
-const SNAKE_SPEED = 5;
+
 
 let lastTimeRender = 0;
 
@@ -16,9 +18,15 @@ function main(currentTime) {
     
     console.log(lastTimeRender);
 
-    
+    update();
+
+    draw();
     
     
 }
+
+function update() {};
+
+function draw() {};
 
 window.requestAnimationFrame(main)
