@@ -24,5 +24,10 @@ export function draw() {
         gameboard.appendChild(snakeElement)
         
     })
-
 };
+
+export function collision(position) {
+    return snakeBody.some(segment => {
+        return position.x === segment.x && position.y === position.y;
+    });
+}
