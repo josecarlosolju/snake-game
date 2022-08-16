@@ -5,8 +5,6 @@ export const SNAKE_SPEED = 5;
 
 const snakeBody = [
     {x: 11, y: 11},
-    {x: 12, y: 11},
-    {x: 13, y: 11},
 
 ]
     

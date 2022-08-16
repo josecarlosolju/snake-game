@@ -1,5 +1,6 @@
 import { gameboard } from './board/index.js';
 import { SNAKE_SPEED, draw as snakeDraw,update as snakeUpdate } from './snake/index.js'
+import {draw as foodDraw, update as foodUpdate} from './food/index.js'
 
 //const gameboard = document.getElementById('game-board')
 
@@ -27,10 +28,12 @@ function main(currentTime) {
 function update() {
     gameboard.innerHTML = '';
     snakeUpdate();
+    foodUpdate();
 };
 
 function draw() {
     snakeDraw();
+    foodDraw();
 };
 
 window.requestAnimationFrame(main)
